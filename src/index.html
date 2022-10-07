@@ -8,11 +8,41 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
+    <style>
+      .navbar-burger
+      {
+        visibility: hidden;
+      }
+      @media screen and (max-width:600px)  {
+        .navbar-burger
+        {
+          visibility: inherit;
+        }
+        .navbar-menu
+        {
+          visibility: hidden;
+        }
+      }
+      
+    </style>
+    <a href="#">logo</a>
+    <div class="navbar-menu">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+
+      </nav>
+    </div>
+    <div class="navbar-burger"><a href="#"><i class="material-icons">menu</i></a></div>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
   </body>
 </html>
+
